@@ -1,0 +1,65 @@
+# ---------------------------------------------------------------------------
+# Sistema operativo / editores
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# ---------------------------------------------------------------------------
+# Logs y temporales
+# ---------------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-error.log*
+*.tmp
+
+# ---------------------------------------------------------------------------
+# Flutter / Dart  (app-flutter/)
+# ---------------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+# pubspec.lock NO se ignora: se versiona, porque la app es un producto final.
+
+# ---------------------------------------------------------------------------
+# Node / TypeScript  (web-shell/, backend/, reader-engine/)
+# ---------------------------------------------------------------------------
+node_modules/
+dist/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+.npm/
+
+# ---------------------------------------------------------------------------
+# Rust  (core-rust/)
+# ---------------------------------------------------------------------------
+target/
+# DECISIÓN: Cargo.lock SÍ se versiona. Este proyecto construye un producto final
+# (no una librería publicada en crates.io) y la reproducibilidad importa para
+# poder compilar en hardware de gama baja con versiones conocidas y estables.
+# Si algún crate de core-rust llega a publicarse como librería, se invierte.
+
+# ---------------------------------------------------------------------------
+# Python (scripts auxiliares)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# ---------------------------------------------------------------------------
+# Entornos y secretos
+# ---------------------------------------------------------------------------
+# Nota: esto lo añadirá la tarea 002 cuando exista el backend. Si creas un
+# backend-node con variables de entorno antes de eso, no las subas al repo.

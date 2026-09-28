@@ -1,0 +1,23 @@
+# Configuración base de todos los editores del monorepo.
+# Ver https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# Rust usa 4 espacios (convención de cargo fmt / rustfmt).
+[*.rs]
+indent_size = 4
+
+# Markdown: los trailing spaces son saltos de línea intencionales.
+[*.md]
+trim_trailing_whitespace = false
+
+# El texto de la licencia (LICENSE) se copia literal de la FSF: no reformatear.
+[LICENSE]
+trim_trailing_whitespace = false
