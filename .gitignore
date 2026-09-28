@@ -63,3 +63,4 @@ venv/
 # ---------------------------------------------------------------------------
 # Nota: esto lo añadirá la tarea 002 cuando exista el backend. Si creas un
 # backend-node con variables de entorno antes de eso, no las subas al repo.
+.opencode/memory.jsonl
